@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel=stylesheet href="./assets/css/reset.css">
+    <link rel=stylesheet href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script type="text/javascript"></script>
+    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script> -->
+
+
+    <title>Trivia Game</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container" id="top">
+            <h1 class="display-4">The Office Trivia</h1>
+            <div id="start">
+                <button type="button" class="btn btn-primary btn-lg" id="startButton">START</button>
+                <div id="showTime"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- question one -->
+
+    <div class="questions">
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h3>What kind of farm does Dwight Schrute own?</h3>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="answersOne row">
+                <div class="col-md-4 correct" id="a1">
+                    <div class="bg-info ml-md-2">Beet</div>
+                </div>
+
+                <div class="col-md-4 incorrect" id="a2">
+                    <div class="bg-info ml-md-2">Bear</div>
+                </div>
+
+                <div class="col-md-4 incorrect" id="a3">
+                    <div class="bg-info ml-md-2">Battlestar Galactica</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- question 2 -->
+        <br>
+        <br>
+
+        <div class="container q2">
+            <div class="row">
+                <div class="col-md">
+                    <h3>What company do the characters work for?</h3>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="answersTwo row">
+                <div class="col-md-4 incorrect" id="a1">
+                    <div class="bg-info ml-md-2">Dunkin Donuts</div>
+                </div>
+
+                <div class="col-md-4 correct" id="a2">
+                    <div class="bg-info ml-md-2">Dunder Mifflin</div>
+                </div>
+
+                <div class="col-md-4 incorrect" id="a3">
+                    <div class="bg-info ml-md-2">Staples</div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <br>
+        <br>
+
+        <!-- question 3 -->
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <h3>Who did Michael Scott go to high school with?</h3>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="answersTwo row">
+                <div class="col-md-4 incorrect" id="a1">
+                    <div class="bg-info ml-md-2">Todd Packer</div>
+                </div>
+
+                <div class="col-md-4 correct" id="a2">
+                    <div class="bg-info ml-md-2">Phyllis Vance</div>
+                </div>
+
+                <div class="col-md-4 incorrect" id="a3">
+                    <div class="bg-info ml-md-2">Meredith Palmer</div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container q4">
+            <div class="row">
+                <div class="col-md">
+                    <h3>Where doees the show take place?</h3>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="answersTwo row">
+                <div class="col-md-4 incorrect" id="a1">
+                    <div class="bg-info ml-md-2">Sacramento, CA</div>
+                </div>
+
+                <div class="col-md-4 incorrect" id="a2">
+                    <div class="bg-info ml-md-2">Philadelphia, PA</div>
+                </div>
+
+                <div class="col-md-4 correct" id="a3">
+                    <div class="bg-info ml-md-2">Scranton, PA</div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md">
+                    <button type="button" class="btn btn-primary" id="submitButton">Submit</button>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="container results">
+        <div class="row">
+            <div class="col-md">
+                <h3>Results</h3>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="answersTwo row">
+            <div class="col-md-4" id="a1">
+                <div class="bg-info ml-md-2" id="correctScore">Correct:</div>
+            </div>
+
+            <div class="col-md-4" id="a2">
+                <div class="bg-info ml-md-2" id="incorrectScore">Incorrect:</div>
+            </div>
+
+            <div class="col-md-4" id="a3">
+                <div class="bg-info ml-md-2" id="unansweredScore">Unanswered:</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="assets/javascript/app.js"></script>
+
+</body>
+
+</html>
