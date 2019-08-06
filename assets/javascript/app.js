@@ -1,3 +1,5 @@
+$(document).ready(function() {
+
 
 
     var correct = 0;
@@ -74,4 +76,4 @@
                     }
         
                     submit();
-// })
+})
