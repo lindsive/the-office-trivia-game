@@ -1,6 +1,4 @@
-$(document).ready(function() {
-
-
+$(document).ready(function () {
 
     var correct = 0;
     var incorrect = 0;
@@ -8,16 +6,11 @@ $(document).ready(function() {
     var num = 60;
     var intervalId;
 
-
-
     $("#submitButton").hide();
     $(".questions").hide();
     $(".results").hide();
 
-
-
     // on start button click, run these functions
-
     $("#startButton").on("click", function () {
 
         function run() {
@@ -56,24 +49,21 @@ $(document).ready(function() {
                 correct++;
                 $("#correctScore").text("Correct: " + correct);
             }
-            
+
             $(".incorrect").click(function () {
                 console.log("works");
                 incorrect++
                 $("#incorrectScore").text("Incorrect: " + incorrect);
             })
-
-
-
         })
     })
-                    function submit() {
-                        $("#submitButton").on("click", function () {
-                            $(".results").show();
-                            $(".questions").hide();
-                            stop();
-                        })
-                    }
-        
-                    submit();
+
+    function submit() {
+        $("#submitButton").on("click", function () {
+            $(".results").show();
+            $(".questions").hide();
+            stop();
+        })
+    }
+    submit();
 })
