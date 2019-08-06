@@ -56,14 +56,13 @@ $(document).ready(function () {
                 $("#incorrectScore").text("Incorrect: " + incorrect);
             })
         })
+        function submit() {
+            $("#submitButton").on("click", function () {
+                $(".results").show();
+                $(".questions").hide();
+                stop();
+            })
+        }
+        submit();
     })
-
-    function submit() {
-        $("#submitButton").on("click", function () {
-            $(".results").show();
-            $(".questions").hide();
-            stop();
-        })
-    }
-    submit();
 })
