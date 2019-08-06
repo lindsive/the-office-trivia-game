@@ -1,4 +1,4 @@
-$(document).ready(function () {
+
 
     var correct = 0;
     var incorrect = 0;
@@ -63,15 +63,15 @@ $(document).ready(function () {
 
 
 
-            function submit() {
-                $("#submitButton").on("click", function () {
-                    $(".results").show();
-                    $(".questions").hide();
-                    stop();
-                })
-            }
-
-            submit();
         })
     })
-})
+                    function submit() {
+                        $("#submitButton").on("click", function () {
+                            $(".results").show();
+                            $(".questions").hide();
+                            stop();
+                        })
+                    }
+        
+                    submit();
+// })
